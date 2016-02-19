@@ -9,20 +9,12 @@ html(lang='pt')
     link(href='styles/main.css', rel='stylesheet')
     
     link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:100' rel='stylesheet' type='text/css')
-    style.
-      * { font-family: 'Josefin Sans', sans-serif; font-weight: 100; }
-      .logo { height: calc(100vh - 110px); }
 
   body#sfcss
 
-    block content
-      .container
-        .row
-          .col-xs-12
-            h1.titulo-principal.text-right.kilo
-              | MOSAAAICO
-            .text-center
-              img.logo(src="assets/logo.svg")
+    include includes/topo
+    include includes/carousel
+    include includes/windows
 
     script(src='jquery/dist/jquery.min.js')
     script(src='bootstrap/dist/js/bootstrap.min.js')

@@ -1,0 +1,80 @@
+/////  CSS ///////// by carlosvz 19/02/2016
+body {
+  background-image: url('../img/bg-pattern.png');
+}
+.topo {
+  position: relative;
+  background-color: @color-primary;
+  height: 81px;
+  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+}
+.show-top {
+  box-shadow: 5px 6px 3px 0px rgba(0,0,0,0.75);
+  margin-top: -15px;
+  padding-left: -5px;
+  height: 15px;
+}
+.background-corte {
+  height: 40px;
+  position: absolute;
+  width: 50%;
+  bottom: -14px;
+  right: 0;
+  background-image: url('../img/bg-pattern.png');
+    &:before{
+      background-image: url('../img/left-bg-menu.png');
+      position: absolute;
+      content: "";
+      width: 25px;
+      height: 35px;
+    }
+}
+.logo {
+  a {
+    color: #fff;
+    float: left;
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+  h1 {
+    display: inline-block;
+    padding-top: 15px;
+    margin: 0;
+    line-height: 0.8;
+    font-size: @size-h1;
+    small {
+      color:#fff;
+    }
+  }
+}
+.menu {
+  ul {
+    text-align: right;
+    margin-left: 5px;
+    margin-top: 15px;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        color:#fff;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 22px;
+        &:hover {
+          background-color: @color-hover;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.clock-phone {
+  font-size: 16px;
+  color:#666;
+  vertical-align: center;
+  margin-top: -10px;
+}
