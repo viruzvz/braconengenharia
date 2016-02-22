@@ -2,7 +2,7 @@
   .col-md-12
     #bracon-carousel.carousel.carousel.slide(data-ride='carousel')
       // Indicators
-      ol.carousel-indicators
+      ol.carousel-indicators.hidden-xs.hidden-sm
         li.active(data-target='#bracon-carousel', data-slide-to='0')
         li(data-target='#bracon-carousel', data-slide-to='1')
         li(data-target='#bracon-carousel', data-slide-to='2')
@@ -10,7 +10,7 @@
       .carousel-inner(role='listbox')
         .item.active
           img(src='img/slyde1.png', alt='...')
-          .carousel-caption
+          .carousel-caption.hidden-xs.hidden-sm
             h2
               | BEM VINDO
               br

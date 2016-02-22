@@ -2,7 +2,7 @@
   .background-corte
     .show-top
   .container
-    .col-md-6
+    .col-md-6.col-sm-12.col-xs-12
       .logo
         a(href="index.html")
           img(src='img/logo-bracon.png' alt="logo")
@@ -13,22 +13,23 @@
             small
               i
                 | ENGENHARIA E COMÉRCIO LTDA
-    .col-md-6
-      .menu
-        ul
-          li
-            a(href="#") PÁGINA INICIAL
-          li
-            a(href="#") SOBRE
-          li
-            a(href="#") ESPECIALIDADES
-          li
-            a(href="#") GALERIA
-          li
-            a(href="#") CONTATOS
-    .col-md-12
+    .col-md-6.col-sm-12.col-xs-12
+      .menu.hidden-sm.hidden-xs
+        include menu
+    .col-md-12.col-xs-12
+      // Button trigger modal
+      button.btn.btn-bracon.visible-xs.visible-sm.pull-right(type='button', data-toggle='modal', data-target='#myModal')
+        .glyphicon.glyphicon-menu-hamburger
       .text-right.clock-phone
         .glyphicon.glyphicon-time  08:00 às 18:00 &nbsp;
         .glyphicon.glyphicon-earphone  (61) 9999-9999
 
 
+    // Modal
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+      .modal-dialog(role='document')
+        .modal-content.modal-content--bracon
+          .modal-body
+            include menu
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Fechar

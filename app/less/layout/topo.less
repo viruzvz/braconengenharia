@@ -8,6 +8,12 @@ body {
   height: 81px;
   box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
 }
+.btn-bracon {
+  background-color: @color-primary;
+  margin-top: -15px;
+  margin-left: 15px;
+  color: #fff;
+}
 .show-top {
   box-shadow: 5px 6px 3px 0px rgba(0,0,0,0.75);
   margin-top: -15px;
@@ -77,4 +83,52 @@ body {
   color:#666;
   vertical-align: center;
   margin-top: -10px;
+
 }
+.modal-content--bracon {
+  background-color: #e85344;
+  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    display: block;
+    &:hover {
+      background-color: #c7493c;
+    }
+  }
+}
+/////////
+@media (min-width: 769px) and (max-width: 991px) {
+  .clock-phone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+@media (min-width: 469px) and (max-width: 768px) {
+  .clock-phone {
+    margin-top: 5px;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .logo {
+    h1 {
+      font-size:22px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 468px) {
+  .clock-phone {
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .logo {
+    h1 {
+      font-size:15px;
+    }
+  }
+}
+
