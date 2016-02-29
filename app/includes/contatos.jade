@@ -4,17 +4,21 @@
     .col-md-12.box
       .row
         .col-md-6
-          form
+          form(action='http://form.ultramail.com.br/', method='POST')
             .form-group
-              label(for='exampleInputEmail1') Endereço de E-mail
-              input#exampleInputEmail1.form-control(type='email', placeholder='nome@provedor.com.br')
+              label(for='email') Endereço de E-mail
+              input#email.form-control(type='email', placeholder='nome@provedor.com.br')
             .form-group
-              label(for='Nome') Nome
-              input#Nome.form-control(type='text', placeholder='Nome')
+              label(for='nome') Nome
+              input#nome.form-control(type='text', placeholder='Nome')
             .form-group
-              label(for='mensagem') Mensagem
-              textarea#mensagem.form-control(rows="3")
-            button.btn.btn-default(type='submit') Enviar
+              label(for='assunto') Mensagem
+              textarea#assunto.form-control(rows="3")
+            button.btn.btn-default(type='submit', value='Eviar') Enviar
+
+            input(type='hidden', name='key', value='eJwBzAAz/+CIvS8IbJiQhXh5Zh8CahEaGGMwnqU86MKJZvV60TyxRm9ybVVsdHJhTWFpbHC5Sj52wa9m+Hw30G2I2nM4O+9beBRjexcOd7kEQ1piiIfUDVnpKokPIgPXP0LjtCMc0dObct17TMFoepp/qsADMPtKn65zYjnEWE0CUABaHRCifPZc/gl5xLcig+1xesujevomhnwkWxA9sqjTBxFb/gU80O2r4UHl6QBO7+1ziRekFV4/KnG3OtO6h74cO8JV65uI5PcbBzsc42Cav/TLXvQ=')
+            input(type='hidden', name='redirect', value='http://braconengenharia.com.br/PaginaDeResposta.html')
+
           p
           p Qd.02 - BL 'C' Nº 41 - Sala 310 - Ed, Anhanguera - Asa Sul - Brasília - DF, CEP 70.315-900
           p Fobe: (61) 3201-0976 - Fax: 3322-2123 
