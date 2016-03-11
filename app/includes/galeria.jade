@@ -3,44 +3,24 @@
     h2 GALERIA
     .col-md-12.box
       .row
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image1")
-            img.img-responsive.thumbnail(src='img/fotos/image1.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image2")
-            img.img-responsive.thumbnail(src='img/fotos/image2.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image3")
-            img.img-responsive.thumbnail(src='img/fotos/image3.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image4")
-            img.img-responsive.thumbnail(src='img/fotos/image4.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image5")
-            img.img-responsive.thumbnail(src='img/fotos/image5.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image6")
-            img.img-responsive.thumbnail(src='img/fotos/image6.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image7")
-            img.img-responsive.thumbnail(src='img/fotos/image7.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image8")
-            img.img-responsive.thumbnail(src='img/fotos/image8.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image9")
-            img.img-responsive.thumbnail(src='img/fotos/image9.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image10")
-            img.img-responsive.thumbnail(src='img/fotos/image10.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image11")
-            img.img-responsive.thumbnail(src='img/fotos/image11.jpg', alt='')
-        .col-lg-3.col-md-4.col-xs-6.thumb
-          a(href='#' title="image12")
-            img.img-responsive.thumbnail(src='img/fotos/image12.jpg', alt='')
+        .col-md-12
+          .media
+            .media-left
+              a(href='galeria-andamento.html')
+                img.media-object.thumbnail(src='img/fotos-bracon/andamento/uniceub/image11.jpg', width="300px" alt='...')
+            .media-body
+              h4.media-heading Obras em andamento
+              |     Clique na imagem e confira
+          .media
+            .media-left
+              a(href='galeria-finalizados.html')
+                img.media-object.thumbnail(src='img/fotos-bracon/finalizadas/sambaia-porto-bello/image43.jpg', width="300px" alt='...')
+            .media-body
+              h4.media-heading Obras finalizadas
+              |     Clique na imagem e confira
 
-      nav.text-center
+
+      nav.text-center.hide
         ul.pagination
           li.disabled
             a(aria-label='Previous')
