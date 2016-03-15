@@ -1,9 +1,26 @@
-.container.spacer-lg
-  .col-md-12
-    h2 CONTATOS
-    .col-md-12.box
-      .row
-        .col-md-6
-          .alert.alert-success Seu e-mail foi enviado com sucesso, em breve responderemos. Enquanto isso conheça mais sobre nossos serviços. Gerência Bracon. 
-        .col-md-6
-          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10858.20204862197!2d-47.905235065286234!3d-15.806371448671992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x005a4b9a7880ec7b!2sCondom%C3%ADnio+do+Edif%C3%ADcio+Anhanguera!5e0!3m2!1spt-BR!2sbr!4v1456187348768', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+doctype html
+html(lang='pt')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Bracon Engenharia e Comércio LTDA
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no')
+    meta(name='description', content='Engenharia, Comércio e Construção. Brasília DF')
+    link(href='styles/main.css', rel='stylesheet')
+    link(rel='shortcut icon', type='image/x-icon', href='img/favicon.ico')
+    link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:100' rel='stylesheet' type='text/css')
+        
+  body#sfcss
+
+    include includes/topo
+    include includes/contatos-enviado
+    include includes/footer
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    
+    script(src='scripts/main.js')
+    
+
+    script(src='//localhost:35729/livereload.js')
